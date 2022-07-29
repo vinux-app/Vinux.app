@@ -31,9 +31,9 @@
 		3A85D1152582BA4500636BA4 /* SideBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideBar.swift; sourceTree = "<group>"; };
 		3AE3322B2582A02900FBDB3E /* Universal_AppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Universal_AppApp.swift; sourceTree = "<group>"; };
 		3AE3322D2582A02B00FBDB3E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		3AE332322582A02B00FBDB3E /* Universal App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Universal App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3AE332322582A02B00FBDB3E /* Vinux.app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vinux.app.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AE332352582A02B00FBDB3E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3AE3323A2582A02B00FBDB3E /* Universal App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Universal App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3AE3323A2582A02B00FBDB3E /* Vinux.app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vinux.app.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AE3323C2582A02B00FBDB3E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3AE3323D2582A02B00FBDB3E /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
 		3AE332742582AE2700FBDB3E /* ArticlesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlesListView.swift; sourceTree = "<group>"; tabWidth = 2; };
@@ -110,8 +110,8 @@
 		3AE332332582A02B00FBDB3E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3AE332322582A02B00FBDB3E /* Universal App.app */,
-				3AE3323A2582A02B00FBDB3E /* Universal App.app */,
+				3AE332322582A02B00FBDB3E /* Vinux.app.app */,
+				3AE3323A2582A02B00FBDB3E /* Vinux.app.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -154,9 +154,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		3AE332312582A02B00FBDB3E /* Universal App (iOS) */ = {
+		3AE332312582A02B00FBDB3E /* Vinux.app (iOS) */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3AE332462582A02B00FBDB3E /* Build configuration list for PBXNativeTarget "Universal App (iOS)" */;
+			buildConfigurationList = 3AE332462582A02B00FBDB3E /* Build configuration list for PBXNativeTarget "Vinux.app (iOS)" */;
 			buildPhases = (
 				3AE3322E2582A02B00FBDB3E /* Sources */,
 				3AE3322F2582A02B00FBDB3E /* Frameworks */,
@@ -166,14 +166,14 @@
 			);
 			dependencies = (
 			);
-			name = "Universal App (iOS)";
+			name = "Vinux.app (iOS)";
 			productName = "Universal App (iOS)";
-			productReference = 3AE332322582A02B00FBDB3E /* Universal App.app */;
+			productReference = 3AE332322582A02B00FBDB3E /* Vinux.app.app */;
 			productType = "com.apple.product-type.application";
 		};
-		3AE332392582A02B00FBDB3E /* Universal App (macOS) */ = {
+		3AE332392582A02B00FBDB3E /* Vinux.app (macOS) */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3AE332492582A02B00FBDB3E /* Build configuration list for PBXNativeTarget "Universal App (macOS)" */;
+			buildConfigurationList = 3AE332492582A02B00FBDB3E /* Build configuration list for PBXNativeTarget "Vinux.app (macOS)" */;
 			buildPhases = (
 				3AE332362582A02B00FBDB3E /* Sources */,
 				3AE332372582A02B00FBDB3E /* Frameworks */,
@@ -183,9 +183,9 @@
 			);
 			dependencies = (
 			);
-			name = "Universal App (macOS)";
+			name = "Vinux.app (macOS)";
 			productName = "Universal App (macOS)";
-			productReference = 3AE3323A2582A02B00FBDB3E /* Universal App.app */;
+			productReference = 3AE3323A2582A02B00FBDB3E /* Vinux.app.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -205,7 +205,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 3AE332292582A02900FBDB3E /* Build configuration list for PBXProject "Universal App" */;
+			buildConfigurationList = 3AE332292582A02900FBDB3E /* Build configuration list for PBXProject "Vinux.app" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -218,8 +218,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				3AE332312582A02B00FBDB3E /* Universal App (iOS) */,
-				3AE332392582A02B00FBDB3E /* Universal App (macOS) */,
+				3AE332312582A02B00FBDB3E /* Vinux.app (iOS) */,
+				3AE332392582A02B00FBDB3E /* Vinux.app (macOS) */,
 			);
 		};
 /* End PBXProject section */
@@ -402,7 +402,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = dev.bitcoincore.ios.vinux;
-				PRODUCT_NAME = "Universal App";
+				PRODUCT_NAME = Vinux.app;
 				SDKROOT = iphoneos;
 				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
@@ -427,7 +427,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = dev.bitcoincore.ios.vinux;
-				PRODUCT_NAME = "Universal App";
+				PRODUCT_NAME = Vinux.app;
 				SDKROOT = iphoneos;
 				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
@@ -456,7 +456,7 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = 12.3;
 				PRODUCT_BUNDLE_IDENTIFIER = dev.bitcoincore.macos.vinux;
-				PRODUCT_NAME = "Universal App";
+				PRODUCT_NAME = Vinux.app;
 				SDKROOT = macosx;
 				SWIFT_VERSION = 5.0;
 			};
@@ -482,7 +482,7 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = 12.3;
 				PRODUCT_BUNDLE_IDENTIFIER = dev.bitcoincore.macos.vinux;
-				PRODUCT_NAME = "Universal App";
+				PRODUCT_NAME = Vinux.app;
 				SDKROOT = macosx;
 				SWIFT_VERSION = 5.0;
 			};
@@ -491,7 +491,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		3AE332292582A02900FBDB3E /* Build configuration list for PBXProject "Universal App" */ = {
+		3AE332292582A02900FBDB3E /* Build configuration list for PBXProject "Vinux.app" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3AE332442582A02B00FBDB3E /* Debug */,
@@ -500,7 +500,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3AE332462582A02B00FBDB3E /* Build configuration list for PBXNativeTarget "Universal App (iOS)" */ = {
+		3AE332462582A02B00FBDB3E /* Build configuration list for PBXNativeTarget "Vinux.app (iOS)" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3AE332472582A02B00FBDB3E /* Debug */,
@@ -509,7 +509,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3AE332492582A02B00FBDB3E /* Build configuration list for PBXNativeTarget "Universal App (macOS)" */ = {
+		3AE332492582A02B00FBDB3E /* Build configuration list for PBXNativeTarget "Vinux.app (macOS)" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3AE3324A2582A02B00FBDB3E /* Debug */,
