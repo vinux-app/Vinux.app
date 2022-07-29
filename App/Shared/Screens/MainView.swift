@@ -9,6 +9,9 @@ import SwiftUI
 
 struct MainView: View {
     
+    @State var needs_setup = false;
+    @State var keypair: Keypair? = nil;
+    
     // MARK: - Properties
     #if os(iOS)
     @Environment(\.horizontalSizeClass) var horizontalSizeClass: UserInterfaceSizeClass?
@@ -29,6 +32,23 @@ struct MainView: View {
             ArticlesListView(articles: techArticles)
             #endif
         }
+        Group {
+            if let kp = keypair, !needs_setup {
+                ContentView(keypair: kp)
+            } else {
+                SetupView()
+                    .onReceive(handle_notify(.login)) { notif in
+                        needs_setup = false
+                        keypair = get_saved_keypair()
+                    }
+            }
+        }
+        .onReceive(handle_notify(.logout)) { _ in
+            keypair = nil
+        }
+        .onAppear {
+            keypair = get_saved_keypair()
+        }
     }
 }
 
@@ -37,3 +57,8 @@ struct MainView_Previews: PreviewProvider {
         MainView()
     }
 }
+
+func needs_setup() -> Keypair? {
+    return get_saved_keypair()
+}
+    
