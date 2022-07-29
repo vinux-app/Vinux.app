@@ -84,6 +84,3 @@ struct TabBar2: View {
         }
     }
 }
-
-
-

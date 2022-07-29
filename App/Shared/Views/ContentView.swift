@@ -69,8 +69,7 @@ struct ContentView: View {
     var LoadingContainer: some View {
         VStack {
             HStack(alignment: .center) {
-                Spacer()
-        
+                // Spacer()
                 if home.signal.signal != home.signal.max_signal {
                     Text("\(home.signal.signal)/\(home.signal.max_signal)")
                         .font(.callout)
@@ -83,7 +82,7 @@ struct ContentView: View {
                 .buttonStyle(PlainButtonStyle())
             }
 
-            Spacer()
+            // Spacer()
         }
     }
 
@@ -130,7 +129,7 @@ struct ContentView: View {
                 EmptyView()
             }
         }
-        .navigationBarTitle("Damus", displayMode: .inline)
+        // .navigationBarTitle("Damus", displayMode: .inline)
     }
     
     var MaybeSearchView: some View {
@@ -175,7 +174,7 @@ struct ContentView: View {
                             LoadingContainer
                         }
                 }
-                .navigationViewStyle(.stack)
+                // .navigationViewStyle(.stack)
             }
             
             TabBar2(new_events: $home.new_events, selected: $selected_timeline, action: switch_timeline)
