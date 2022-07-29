@@ -9,7 +9,7 @@ import SwiftUI
 
 struct TabBar: View {
     
-    // MARK: - UI Elements
+    // MARK: - TabBar
     var body: some View {
         TabView {
             ArticlesListView(articles: techArticles)
