@@ -19,6 +19,7 @@ struct SearchHomeView: View {
                 .padding(5)
                 .padding(.leading, 35)
                 .textInputAutocapitalization(.never)
+                .disableAutocorrection(true)
             Label("", systemImage: "magnifyingglass")
                 .padding(.leading, 10)
         }
@@ -50,11 +51,12 @@ struct SearchHomeView: View {
     var body: some View {
         VStack {
             SearchInput
-            
+            // GlobalContent
             MainContent
         }
         .onChange(of: search) { s in
             print("search change 1")
+            search = search.lowercased()
         }
         .onAppear {
             model.subscribe()
