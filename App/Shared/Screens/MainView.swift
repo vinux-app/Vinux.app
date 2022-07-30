@@ -20,55 +20,26 @@ struct MainView: View {
     // MARK: - UI Elements
     @ViewBuilder
     var body: some View {
-        NavigationView {
-            #if os(iOS)
-            if horizontalSizeClass == .compact {
-                // TabBar()
-                Group {
-                    // TabBar()
-                    if let kp = keypair, !needs_setup {
-                        ContentView(keypair: kp)
-                    } else {
-                        SetupView()
-                            .onReceive(handle_notify(.login)) { notif in
-                                needs_setup = false
-                                keypair = get_saved_keypair()
-                            }
-                    }
-                }
-                .onReceive(handle_notify(.logout)) { _ in
-                    keypair = nil
-                }
-                .onAppear {
-                    keypair = get_saved_keypair()
-                }
-                // ArticlesListView(articles: techArticles)
-            } else {
-                // SideBar()
-                Group {
-                    SideBar()
-                    if let kp = keypair, !needs_setup {
-                        ContentView(keypair: kp)
-                    } else {
-                        SetupView()
-                            .onReceive(handle_notify(.login)) { notif in
-                                needs_setup = false
-                                keypair = get_saved_keypair()
-                            }
-                    }
-                }
-                .onReceive(handle_notify(.logout)) { _ in
-                    keypair = nil
-                }
-                .onAppear {
-                    keypair = get_saved_keypair()
-                }
-                // ArticlesListView(articles: techArticles)
+        Group {
+            if let kp = keypair, !needs_setup {
+                // Text("Sidebar")
+                // Text("Group Content")
+                ContentView(keypair: kp)
+                   // .frame(minWidth: 600, minHeight: 600)
 
+            } else {
+                SetupView()
+                    .onReceive(handle_notify(.login)) { notif in
+                        needs_setup = false
+                        keypair = get_saved_keypair()
+                    }
             }
-            #else
-            //SideBar()
-            #endif
+        }
+        .onReceive(handle_notify(.logout)) { _ in
+            keypair = nil
+        }
+        .onAppear {
+            keypair = get_saved_keypair()
         }
     }
 }
