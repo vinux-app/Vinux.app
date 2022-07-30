@@ -1,3 +1,6 @@
 [submodule "nostr-rs-relay"]
 	path = nostr-rs-relay
 	url = git@github.com:RandyMcMillan/nostr-rs-relay.git
+[submodule "damus.swift"]
+	path = damus.swift
+	url = github.com:RandyMcMillan/damus.swift.git
