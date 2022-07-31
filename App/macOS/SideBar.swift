@@ -18,7 +18,7 @@ struct SideBar: View {
     // MARK: - Properties
     @State var selection: Set<NavigationItem> = [.tech]
     
-    // MARK: - UI Elements
+    // MARK: - GUI Nav Entrypint
     @ViewBuilder
     var body: some View {
         List(selection: $selection) {

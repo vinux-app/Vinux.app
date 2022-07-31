@@ -9,6 +9,7 @@ import SwiftUI
 
 struct TabBar: View {
     
+    // MARK: - GUI Nav Entrypint
     // MARK: - TabBar
     var body: some View {
         TabView {

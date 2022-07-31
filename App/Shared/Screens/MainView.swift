@@ -17,7 +17,7 @@ struct MainView: View {
     @Environment(\.horizontalSizeClass) var horizontalSizeClass: UserInterfaceSizeClass?
     #endif
     
-    // MARK: - UI Elements
+    // MARK: - GUI Entrypoint
     @ViewBuilder
     var body: some View {
         Group {

@@ -174,7 +174,7 @@ struct ContentView: View {
                             LoadingContainer
                         }
                 }
-                // .navigationViewStyle(.stack)
+                .navigationViewStyle(.stack)
             }
             
             TabBar2(new_events: $home.new_events, selected: $selected_timeline, action: switch_timeline)
@@ -353,7 +353,6 @@ struct ContentView: View {
         
         pool.connect()
     }
-
     
 }
 
@@ -362,7 +361,6 @@ struct ContentView_Previews: PreviewProvider {
         ContentView(keypair: Keypair(pubkey: "3efdaebb1d8923ebd99c9e7ace3b4194ab45512e2be79c1b7d68d9243e0d2681", privkey: nil))
     }
 }
-
 
 func get_since_time(last_event: NostrEvent?) -> Int64? {
     if let last_event = last_event {
@@ -440,11 +438,9 @@ func save_last_event(_ ev: NostrEvent, timeline: Timeline) {
     UserDefaults.standard.set(String(ev.created_at), forKey: "last_\(str)_time")
 }
 
-
 func get_like_pow() -> [String] {
     return ["00000"] // 20 bits
 }
-
 
 func update_filters_with_since(last_of_kind: [Int: NostrEvent], filters: [NostrFilter]) -> [NostrFilter] {
     
@@ -478,8 +474,6 @@ func update_filters_with_since(last_of_kind: [Int: NostrEvent], filters: [NostrF
         return filter
     }
 }
-
-
 
 func setup_notifications() {
     

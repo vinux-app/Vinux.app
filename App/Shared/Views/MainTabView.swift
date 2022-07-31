@@ -59,12 +59,13 @@ struct TabButton: View {
         }) {
             Label("", systemImage: selected == timeline ? "\(img).fill" : img)
                 .contentShape(Rectangle())
-                .frame(maxWidth: .infinity, minHeight: 30.0)
+                .frame(maxWidth: .infinity, minHeight: 45.0)
         }
         .foregroundColor(selected != timeline ? .gray : .primary)
     }
 }
     
+    // MARK: - GUI Nav Entrypint
 
 struct TabBar2: View {
     @Binding var new_events: NewEventsBits
