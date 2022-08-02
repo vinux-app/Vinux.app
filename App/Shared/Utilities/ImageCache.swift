@@ -9,6 +9,7 @@ import Foundation
 import SwiftUI
 import Combine
 
+#if !os(macOS)
 extension UIImage {
     func decodedImage(_ size: Int) -> UIImage {
         guard let cgImage = cgImage else { return self }
@@ -84,3 +85,4 @@ func load_image(cache: ImageCache, from url: URL) -> AnyPublisher<UIImage?, Neve
         .receive(on: RunLoop.main)
         .eraseToAnyPublisher()
 }
+#endif

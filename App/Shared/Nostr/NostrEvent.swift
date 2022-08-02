@@ -132,7 +132,7 @@ class NostrEvent: Codable, Identifiable, CustomStringConvertible {
     }
 
     private func get_referenced_ids(key: String) -> [ReferencedId] {
-        return Vinux_app.get_referenced_ids(tags: self.tags, key: key)
+        return Vinux.get_referenced_ids(tags: self.tags, key: key)
     }
 
     public func is_root_event() -> Bool {
