@@ -32,6 +32,8 @@
 		3ACBCB78295FE5C70037388A /* TimeAgoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ACBCB77295FE5C70037388A /* TimeAgoTests.swift */; };
 		3AE45AF6297BB2E700C1D842 /* LibreTranslateServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE45AF5297BB2E700C1D842 /* LibreTranslateServer.swift */; };
 		3AFBF3FD29FDA7CC00E79C7C /* CustomZapViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFBF3FC29FDA7CC00E79C7C /* CustomZapViewTests.swift */; };
+		4B27056D2B55A42D006C0256 /* damusTests.xctest in Resources */ = {isa = PBXBuildFile; fileRef = 4CE6DEF327F7A08200C66700 /* damusTests.xctest */; };
+		4B27056E2B55A431006C0256 /* damusUITests.xctest in Resources */ = {isa = PBXBuildFile; fileRef = 4CE6DEFD27F7A08200C66700 /* damusUITests.xctest */; };
 		4C06670128FC7C5900038D2A /* RelayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C06670028FC7C5900038D2A /* RelayView.swift */; };
 		4C06670428FC7EC500038D2A /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 4C06670328FC7EC500038D2A /* Kingfisher */; };
 		4C06670628FCB08600038D2A /* ImageCarousel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C06670528FCB08600038D2A /* ImageCarousel.swift */; };
@@ -1668,6 +1670,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B27056D2B55A42D006C0256 /* damusTests.xctest in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1675,6 +1678,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B27056E2B55A431006C0256 /* damusUITests.xctest in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
